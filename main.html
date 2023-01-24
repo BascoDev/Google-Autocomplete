@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="form.css">
+    <script defer type="application/javascript" src="form.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>Address Form</h1>
+        <p>Please enter your address details.</p>
+        <hr />
+        <div class="form">
+            <label class="field">
+                <span class="field__label">Search address from google</span>
+                <input class="field__input" type="text" id="autoComplete" />
+            </label>
+            
+            <div class="fields fields--3">
+                <label class="field">
+                      <span class="field__label">City</span>
+                      <input class="field__input" type="text" id="city" />
+                </label>
+                
+<!--                <label class="field">-->
+<!--                    <span class="field__label">Region</span>-->
+<!--                    <select class="field__input" id="region">-->
+<!--                        <option value=""></option>-->
+<!--                        <option value="unitedstates">United States</option>-->
+<!--                        <option value="unitedstates">United States</option>-->
+<!--                    </select>-->
+<!--                </label>-->
+                
+                <label class="field">
+                    <span class="field__label">Region</span>
+                    <input class="field__input" type="text" id="region" />
+                </label>
+                
+                <label class="field">
+                    <span class="field__label">Postal code</span>
+                    <input class="field__input" type="text" id="postcode" />
+                </label>
+    
+                <label class="field">
+                    <span class="field__label">Country</span>
+                    <input class="field__input" id="country"></input>
+                </label>
+            </div>
+      </div>
+      <hr>
+      <button class="button">Continue</button>
+    </div>
+</body>
+
+<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBf1BwdbRJnemiK2vHHR1OEZWCX4ENnR-k&callback=initAutocomplete&libraries=places&v=weekly"></script>
+</html>
